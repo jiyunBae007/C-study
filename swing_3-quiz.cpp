@@ -2,22 +2,22 @@
 #include <string>
 using namespace std;
 
-int max(int x, int y) {
+int max(int x, int y) {         //í° ìˆ˜ë¥¼ ì°¾ëŠ” í•¨ìˆ˜ ìƒì„±
 	if (x > y) return x;
 	else return y;
 }
 
-int min(int x, int y) {
+int min(int x, int y) {        //ì‘ì€ ìˆ˜ë¥¼ ì°¾ëŠ” í•¨ìˆ˜ ìƒì„±
 	if (x > y) return y;
 	else return x;
 }
 
 int main() {
 	int x, y;
-	cout << "µÎ ¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä (¶ç¾î¾²±â·Î ±¸ºĞ)<< ";
+	cout << "ë‘ ìˆ˜ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” (ë„ì–´ì“°ê¸°ë¡œ êµ¬ë¶„)<< ";
 	cin >> x >> y;
 	cout << endl;
 
-	cout << "Å« ¼ö >>" << max(x, y) << endl;
-	cout << "ÀÛÀº ¼ö >>" << min(x, y) << endl;
+	cout << "í° ìˆ˜ >>" << max(x, y) << endl;
+	cout << "ì‘ì€ ìˆ˜ >>" << min(x, y) << endl;
 }
