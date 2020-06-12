@@ -5,23 +5,12 @@ using namespace std;
 
 #include "PhoneBook.h"
 
-class Address {
-private:
-	string name;
-	string Pnumber;
-public:
-	void addPhone();
-	void editPhone();
-	string getPnum();
-	string getName();
-
-};
 
 void Address::addPhone() {
-	cout << "-------SWING ÀüÈ­¹øÈ£ºÎ---------\n";
-	cout << "ÀÌ¸§À» ÀÔ·ÂÇØ ÁÖ¼¼¿ä: ";
+	cout << "-------SWING ì „í™”ë²ˆí˜¸ë¶€---------\n";
+	cout << "ì´ë¦„ì„ ìž…ë ¥í•´ ì£¼ì„¸ìš”: ";
 	cin >> name;
-	cout << "\nÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä: ";
+	cout << "\nì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”: ";
 	cin >> Pnumber;
 
 }
@@ -30,25 +19,25 @@ void Address::editPhone() {
 	string In_name;
 	string In_number;
 
-	cout << "ÀÌ¸§À» ÀÔ·ÂÇØ ÁÖ¼¼¿ä: ";
+	cout << "ì´ë¦„ì„ ìž…ë ¥í•´ ì£¼ì„¸ìš”: ";
 	cin >> In_name;
 
 	if (In_name != name) {
 		do {
-			cout << "¿¬¶ôÃ³°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä. >>";
+			cout << "ì—°ë½ì²˜ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”. >>";
 			cin >> In_name;
 
 
 		} while (In_name != name);
 
-		cout << "º¯°æÇÒ ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä >>";
+		cout << "ë³€ê²½í•  ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš” >>";
 		cin >> In_number;
 		Pnumber = In_number;
 		cout << endl;
 	}
 	else
 	{
-		cout << "º¯°æÇÒ ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä >>";
+		cout << "ë³€ê²½í•  ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš” >>";
 		cin >> In_number;
 		Pnumber = In_number;
 		cout << endl;
